@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: #fff;
-    background-color: #000;
+    background-color: #ffffff;
 }
 
 .header {
@@ -11,6 +11,18 @@ body {
     justify-content: space-between;
     padding: 10px 20px;
     background-color: #1a1a1a;
+}
+
+.paragrafo h2{
+    color: #111111;
+    margin: 20px;
+}
+
+.paragrafo p{
+    color: #333333; /* Cor do texto em um tom de cinza escuro */
+    font-family: Arial, sans-serif; /* Ajuste para uma fonte legível */
+    line-height: 1.6;
+    margin: 20px;
 }
 
 .logo img {
@@ -125,37 +137,46 @@ body {
 .propagandas {
     padding: 20px;
     text-align: center;
-    background-color: #222020ab; /* Altere conforme o design do seu site */
+    background-color: #2c2c2c; /* Mantém um fundo escuro com um tom mais agradável */
     margin: 20px 0;
+    border-radius: 10px; /* Bordas arredondadas na seção inteira */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao contêiner */
 }
 
 .propagandas h2 {
-    color: #fff;
+    color: #ffffff;
     font-size: 24px;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .prop-ads {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap; /* Permite que as propagandas se ajustem em telas menores */
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .prop-ads a {
     display: block;
-    width: 22%; /* Ajusta o tamanho das propagandas */
+    width: 22%;
     max-width: 200px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Suaviza transições de transformação e sombra */
+}
+
+.prop-ads a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais intensa ao passar o mouse */
 }
 
 .prop-ads img {
-    width: 200px; 
-    height: 100px; 
-    object-fit: contain; 
-    border-radius: 8px;
+    width: 100%; 
+    height: auto; 
+    object-fit: contain;
+    border-radius: 12px; /* Bordas arredondadas nas imagens */
     transition: transform 0.3s;
 }
 
 .prop-ads img:hover {
-    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    transform: scale(1.08); /* Efeito de zoom ao passar o mouse */
 }
