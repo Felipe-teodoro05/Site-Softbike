@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicicletas</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
+            gap: 20px;
+            justify-items: center;
+            align-items: center;
+            justify-content: center;
+            grid-auto-flow: row dense; /* Garante preenchimento adequado */
+        }
+
+        .image-container {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin: 10px;
+            padding: 15px;
+            width: 220px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #ddd;
+            border-radius: 10px;
+        }
+
+        .image-container p {
+            font-weight: bold;
+            margin-top: 10px;
+            color: #555;
+        }
+
+        .cor_disp {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .cor_disp button {
+    background: none; /* Remove a cor de fundo padrão */
+    border: none; /* Remove a borda padrão */
+    padding: 0;
+    margin: 0 5px;
+    cursor: pointer; /* Ícone de mão ao passar o mouse */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito ao passar o mouse */
+}
+
+.cor_disp button:hover {
+    transform: scale(1.2); /* Aumenta o tamanho ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+}
+
+.cor_disp li {
+    width: 30px; /* Aumenta o tamanho dos círculos */
+    height: 30px;
+    border-radius: 50%;
+    margin: 0;
+    border: 2px solid #000; /* Borda mais destacada */
+    display: inline-block; /* Garantir que se comportem como elementos em linha */
+}
+
+
+        .disponivel1 { background-color: green; }
+        .disponivel2 { background-color: blue; }
+        .disponivel3 { background-color: black; }
+        .disponivel4 { background-color: white; }
+    </style>
+</head>
+<body>
+    <div class="image-gallery">
+        <div class="image-container">
+            <img src="bicicleta1.jpg" alt="Bicicleta 1">
+            <p>Cores disponíveis:</p>
+            <ul class="cor_disp">
+                <button><li class="disponivel1"></li></button>
+                <button><li class="disponivel2"></li></button>
+                <button><li class="disponivel3"></li></button>
+                <button><li class="disponivel4"></li></button>
+            </ul>
+        </div>
+        <div class="image-container">
+            <img src="bicicleta2.jpg" alt="Bicicleta 2">
+            <p>Cores disponíveis:</p>
+            <ul class="cor_disp">
+                <button><li class="disponivel1"></li></button>
+                <button><li class="disponivel2"></li></button>
+                <button><li class="disponivel3"></li></button>
+                <button><li class="disponivel4"></li></button>
+            </ul>
+        </div>
+        
+        <div class="image-container">
+            <img src="bicicleta3.jpg" alt="Bicicleta 3">
+            <p>Cores disponíveis:</p>
+            <ul class="cor_disp">
+                <button><li class="disponivel1"></li></button>
+                <button><li class="disponivel2"></li></button>
+                <button><li class="disponivel3"></li></button>
+                <button><li class="disponivel4"></li></button>
+            </ul>
+        </div>
+        <div class="image-container">
+            <img src="bicicleta4.jpg" alt="Bicicleta 4">
+            <p>Cores disponíveis:</p>
+            <ul class="cor_disp">
+                <button><li class="disponivel1"></li></button>
+                <button><li class="disponivel2"></li></button>
+                <button><li class="disponivel3"></li></button>
+                <button><li class="disponivel4"></li></button>
+            </ul>
+        </div>
+        <div class="image-container">
+            <img src="bicicleta5.jpg" alt="Bicicleta 5">
+            <p>Cores disponíveis:</p>
+            <ul class="cor_disp">
+                <button><li class="disponivel1"></li></button>
+                <button><li class="disponivel2"></li></button>
+                <button><li class="disponivel3"></li></button>
+                <button><li class="disponivel4"></li></button>
+            </ul>
+        </div>        
+    </div>
+</body>
+</html>
